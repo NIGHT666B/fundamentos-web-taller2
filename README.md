@@ -1,7 +1,7 @@
 # Taller Colaborativo - Git y HTML (Desarrollo Individual)
 
 ## Datos del Proyecto
-- **Asignatura:** Fundamentos WEB (Grupo 4303)
+- **Asignatura:** Fundamentos WEB (Grupo 4303D)
 - **Programa:** Ingeniería en Sistemas
 - **Institución:** UNICAMACHO
 - **Desarrollador:** Brayan José Rodríguez Landázuri
