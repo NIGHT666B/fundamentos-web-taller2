@@ -1,22 +1,29 @@
-# Taller Colaborativo - Git y HTML (Desarrollo Individual)
+# Taller 2 - Fundamentos de CSS
 
 ## Datos del Proyecto
 - **Asignatura:** Fundamentos WEB (Grupo 4303D)
 - **Programa:** Ingeniería en Sistemas
 - **Institución:** UNICAMACHO
+- **Profesor:** Ronal Andres Tamayo
 - **Desarrollador:** Brayan José Rodríguez Landázuri
-- **Nota:** Actividad desarrollada de forma individual, simulando el flujo colaborativo mediante el sistema de ramas y registros en Git.
+- **Proyecto:** Avance Formativo I (Simulación de Desarrollo Autónomo)
 
-## Distribución del trabajo (Roles Simulados)
+## Convención CSS
+- **Idioma de clases:** Inglés técnico para escalabilidad internacional.
+- **Formato:** kebab-case (letras minúsculas unidas por guiones).
+- **Metodología:** Inspirado en BEM para la separación semántica de componentes (`.site-header__title`).
 
-| Rama / Rol | Responsabilidad Asumida | Archivos |
-| :--- | :--- | :--- |
-| `usuario1` | Pág 1: Inteligencia Artificial Generativa | `index.html` e `img/tema1.jpg` |
-| `usuario2` | Pág 2: Los Deepfakes | `tema2.html` e `img/tema2.jpg` |
-| `usuario3` | Pág 3: Asistentes de Código IA | `tema3.html`, `img/tema3.jpg` y `README.md` |
+## Paleta de color y Justificación
+- **Primary (--color-primary):** `#17365d` (Azul profundo corporativo).
+- **Secondary (--color-secondary):** `#2f75b5` (Azul medio complementario).
+- **Background (--color-bg):** `#f7f9fc` (Gris azulado neutro de descanso visual).
+- **Text (--color-text):** `#1f2937` (Gris carbón oscuro de alto contraste).
 
-## Validación HTML (W3C Validator)
-### Página 1, 2 y 3
-- **Errores encontrados:** Warning por la estructura rígida de etiquetas vacías `<img>`.
-- **Correcciones realizadas:** Se verificó la sintaxis correcta eliminando cierres innecesarios.
-- **Fuente consultada:** W3C Markup Validation Service.
+**Justificación:** Al trabajar el **Tema 1: Inteligencia artificial y automatización**, seleccioné tonos azules y neutros fríos porque representan un entorno tecnológico, analítico e industrial moderno. El contraste de color del texto principal frente al fondo blanco de las tarjetas supera el umbral de accesibilidad **WCAG 2.2 AA (relación superior a 4.5:1)**, garantizando que el sitio sea legible para personas con debilidad visual.
+
+## Prueba de cascada (Experimento Obligatorio)
+- **Resultado del selector de elemento (`h2`):** El texto adquiere color **azul** inicial.
+- **Resultado de la clase (`.demo-title`):** El color cambia a **verde** debido a que los selectores de clase poseen mayor especificidad matemática que los selectores de elemento genéricos.
+- **Resultado del ID (`#demo-title`):** El color se transforma a **morado / azul primario** porque un selector por ID supera en prioridad jerárquica a las clases y elementos en el algoritmo de cascada.
+- **Resultado del estilo inline (`style=""`):** Prevalece el color **naranja** ya que la declaración en línea se incrusta directo en el nodo del DOM, rompiendo los estilos generales del autor.
+- **Explicación:** La cascada es el algoritmo que resuelve conflictos de herencia y especificidad. Gana la regla con mayor peso en el árbol de origen; a igual especificidad, prevalece el orden de aparición secuencial posterior.
